@@ -40,7 +40,7 @@ class app:
     def stt(self):
         r = sr.Recognizer()
         with sr.Microphone() as source:
-            audio = r.listen(source)
+            audio = r.listen(source, phrase_time_limit=3)
         
         mySpeech = r.recognize_google(audio, language='ko', show_all=True)
         try:
