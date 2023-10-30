@@ -21,7 +21,7 @@ class app:
         self.defaultPageTitle = tk.Label(
             self.defaultPage,
             text="일제강점기 잔재 언어 탐지기",
-            font=("Arial", 30),
+            font=("Arial", 40),
             fg="black",
             bg="white",
         )
